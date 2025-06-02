@@ -7,7 +7,7 @@ export const setupApp = (app: Express) => {
   app.use(express.json());
 
   app.get('/', (req: Request, res: Response) => {
-    res.status(200).send('hello world Bitau!!!');
+    res.status(200).send('Hello World Bitau!!!');
   });
 
   app.use('/api/drivers', driversRouter);
